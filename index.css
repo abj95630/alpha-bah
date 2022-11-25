@@ -1,0 +1,41 @@
+
+body {
+    width: auto;
+}
+/* BARRE DE NAVIGATION */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+
+nav .nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-list p a {
+    text-decoration: none;
+    margin-left: 1.5em;
+}
+
+header {
+    width: auto;
+}
+
+/* SECTIONS */
+div, footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#presentation, #projets {
+    background-color: rgb(174, 171, 171);
+}

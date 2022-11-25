@@ -1,28 +1,41 @@
-
+/* LE CORPS DE LA PAGE */
 body {
-    width: auto;
+    margin: 0;
 }
+
 /* BARRE DE NAVIGATION */
 nav {
     display: flex;
     justify-content: flex-end;
-    margin-right: 3%;
+    background-color: rgb(25, 92, 193);
+    width: 100%;
+    transition: 0.4s;
 }
 
-
-nav .nav-list {
+.nav-list {
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
-
-.nav-list p a {
+.nav-list li a {
+    display: block;
     text-decoration: none;
-    margin-left: 1.5em;
+    padding: 25px;
+    color: black;
+    font-family: "Fredoka One";
 }
 
-header {
-    width: auto;
+.nav-list li:hover {
+    background-color: gold;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 /* SECTIONS */
@@ -36,6 +49,12 @@ div, footer {
     padding-bottom: 5%;
 }
 
-#presentation, #projets {
+#presentation, #projets, #contact {
     background-color: rgb(174, 171, 171);
+}
+
+#photo-code {
+    width: 100%;
+    height: 800px;
+    display: block;
 }

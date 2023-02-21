@@ -1,52 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e435ec0fd6.js" crossorigin="anonymous"></script> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />   
     <title>Mon Portfolio A.B</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#parcours-experiences">Parcours</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#compétences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="navbar">
+        <p id="logo-navbar">AB</p>
+        <ul class="nav-list">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="#presentation">À PROPOS</a></li>
+            <li><a href="#projets">PROJETS</a></li>
+            <li><a href="#compétences">COMPÉTENCES</a></li>
+            <li><a href="#form-contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-    <img src="./istockphoto-1047259374-612x612.jpeg" id="photo-code" alt="code">
-
+    <div class="photo-nom">
+        <img src="./images/photo-coloc copie.jpg" alt="photoPersonne" style="width: 120px; height: 120px; margin-left: 45%; margin-top: 125px; border-radius: 50%;">
+        <div id="text"> Alpha BAH<br>Développeur en devenir</div>
+    </div>
+    
     <div id="presentation">
-        <h2>PRESENTATION</h2>
-        <p>Je suis un développeur en devenir.</p>
+        <h1>À PROPOS</h1>
+        <p id="p-propos">Étudiant en développement informatique à l'Ada Tech School depuis octobre 2022. J'apprends
+        les conceptions globales de la programmation et leur mise en pratique dans des projets collectifs pendant 
+        2 semaines. Auparavant étudiant en reséau, je me suis respécialisé en 2020. La formation dure 21 mois avec 9 mois de formation puis 1 an d'alternance. J'apprécie
+        d'apprendre de tout sur le domaine de la tech (Front-End, Back-End, Full-Stack, Mobile). 
+        </p>
+        <div id="softs-skills">
+            <p style="font-size: 45px;">QUALITÉS</p>
+            <div id="skills">
+                <p>Curieux</p>
+                <p>Envie D'Apprendre</p>
+                <p>Sérieux</p>
+                <p>Collectif</p>
+            </div>
+        </div>
+        <a id="download_button" href="./CV Alpha BAH_alternance-developpeur-fs_.pdf" download="cv">
+            Télécharger mon CV
+        </a>
     </div>
 
-    <div id="parcours-experiences">
-        <h2>PARCOURS ET EXPERIENCES</h2>
-        <p>Voici mon parcours depuis le début de mes études supérieures</p>
-    </div>
  
-     <div id="projets">
-        <h2>PROJETS</h2>
-        <p>Pico-8</p>
-        <p>Dataviz</p>
+    <div id="projets">
+        <h1>PROJETS</h1>
+        <div class="projet-indiv">
+            <div class="images-projet">
+                <img src="/images/pico-8.thumb.png.ececf1a340ce821a1111bb1d416e3775.png" style="height: 230px; width: 300px;">
+                <p>🔗 Pico-8</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/Capture d’écran 2023-01-27 à 11.52.29 AM.png" style="height: 230px; width: 300px;">
+                <p>🔗 Dataviz</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/Capture d’écran 2023-01-27 à 2.25.23 PM.png" style="height: 230px; width: 210px;">
+                <p>🔗 Extension Navigateur</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/portfolio.png" style="height: 230px; width: 300px;">
+                <p>🔗 Portfolio</p>
+            </div>
+        </div>
+        <div class="projet-indiv">
+            <div class="images-projet">
+                <img src="/images/Projet.jpeg" style="height: 230px; width: 300px;">
+                <p>🔗 Réseau Social PHP (À Venir)</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/Projet.jpeg" style="height: 230px; width: 300px;">
+                <p>🔗 Plateforme de meubles (À Venir)</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/Projet.jpeg" style="height: 230px; width: 300px;">
+                <p>🔗 Microblogging (À Venir)</p>
+            </div>
+            <div class="images-projet">
+                <img src="/images/Projet.jpeg" style="height: 230px; width: 300px;">
+                <p>🔗 Mobile Front (À Venir)</p>
+            </div>
+        </div>
+        <div class="projet-indiv">
+            <div class="images-projet">
+                <img src="/images/Projet.jpeg" style="height: 230px; width: 300px;">
+                <p>🔗 Mobile Back (À Venir)</p>
+            </div>
+        </div>
     </div>
 
     <div id="compétences">
-        <h2>COMPÉTENCES</h2>
-        <p>HTML, CSS, JAVASCRIPT</p>
+        <h1>COMPÉTENCES</h1>
+        <div id="img_competences">
+            <i class="fa-brands fa-html5 fa-10x"></i>
+            <i class="fa-brands fa-css3-alt fa-10x"></i>
+            <i class="fa-brands fa-js fa-10x"></i>
+            <i class="fa-brands fa-python fa-10x"></i>
+        </div>
     </div>
 
+    <div id="form-contact">
+        <h2 id="contact-titre" style="font-size: 50px;">CONTACTEZ-MOI</h2>
+        <form action="" name="ajax" method="post">
+            <label for="nom">Nom et Prénom</label>
+            <input type="text" id="nom" required>
+            <br>
+            <label for="email">Courrier Électronique</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="commentaire">Commentaire</label>
+            <textarea id="commentaire" required></textarea>
+            <br>
+            <button id="envoyer">Envoyer</button>
+            <p id="reponse"></p>
+        </form>
+    </div>
+
+    <i onclick="topFunction()" style="color: burlywood" id="myBtn" class="fa-regular fa-circle-up fa-3x "></i>
+
     <footer id="contact">
-        <h2>CONTACT</h2>
-        <p>LinkedIn Github</p>
+        <p>
+            <a class="logo" href="https://www.linkedin.com/in/alpha-bah-developpeur-web-et-mobile-alternance/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0e76a8;"></i></a> 
+            <a class="logo" href="https://github.com/abj95630" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: white;"></i></a>
+        </p>
+        <p style="font-size: 15px;">@ 2023 - Alpha BAH - Tout Droits Réservés</p>
     </footer>
     <script src="script.js"></script>
 </body>

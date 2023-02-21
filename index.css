@@ -1,60 +1,195 @@
 /* LE CORPS DE LA PAGE */
 body {
     margin: 0;
+    padding: 0;
+    user-select: none;
 }
 
 /* BARRE DE NAVIGATION */
-nav {
+#navbar {
     display: flex;
-    justify-content: flex-end;
-    background-color: rgb(25, 92, 193);
+    background-color: wheat;
     width: 100%;
-    transition: 0.4s;
+    transition: 0.1s;
+    position: fixed;
+}
+
+#logo-navbar {
+    display: flex;
+    margin-left: 60px;
 }
 
 .nav-list {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    justify-content: flex-end;
 }
 
-.nav-list li a {
-    display: block;
-    text-decoration: none;
-    padding: 25px;
+
+.nav-list li {
+    display: flex;
     color: black;
-    font-family: "Fredoka One";
+    font-family: "EB Garamond";
+}
+
+.nav-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
 }
 
 .nav-list li:hover {
     background-color: gold;
 }
 
-ul {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav-list a:hover {
+    color: red;
+}
+
+/* PHOTO DE CODE */
+.photo-nom {
+    width: 100%;
+    height: 800px;
+    background-image: url(./images/code.jpeg);
+    background-size: cover;
+}
+
+#text  {
+    color: white;
+    left: 250px;
+    right: 250px;
+    top: 350px;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'EB Garamond';
+    font-weight: 600;
+}   
+
+h1 {
+    font-size: 4em;
 }
 
 /* SECTIONS */
-div, footer {
+#presentation, #parcours-experiences, #projets, #compétences, #form-contact {
     display: flex;
-    align-content: center;
-    justify-content: space-around;
     flex-direction: column;
+    text-align: center;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    font-family: 'EB Garamond';
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-#presentation, #projets, #contact {
+#presentation, #compétences, #contact {
     background-color: rgb(174, 171, 171);
 }
 
-#photo-code {
-    width: 100%;
-    height: 800px;
-    display: block;
+#download_button {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 7px;
+    background-color: brown;
+    border-radius: 30px;
+    color: white;
 }
+
+#download_button:hover { opacity: 0.8; }
+
+.projet-indiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.images-projet {
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono'; 
+}
+
+#skills {
+    display: flex;
+}
+
+#skills p {
+    margin: 55px;
+    background-color: brown;
+    padding: 0.4em;
+    color: white;
+    border-radius: 30px;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+#p-propos {
+    margin: 55px;
+}
+
+#img_competences {
+    display: flex;
+    justify-content: space-between;
+}
+
+#img_competences i { margin: 50px; }
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    border: none; 
+    padding: 15px;
+    z-index: 99;
+}
+
+#myBtn:hover { opacity: 0.6; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 30px;
+    background-color: rgb(12, 66, 33);
+}
+
+form input, form button {
+    width: 30rem;
+    height: 2.5em;
+    border-style: none;
+}
+
+form textarea {
+    height: 150px;
+    border-style: none;
+}
+
+label { color: white; }
+
+form button:hover {
+    opacity: 0.4;
+}
+
+#contact {
+    font-family: "EB Garamond";
+    background-color: black;
+    color: white;
+}
+
+.logo:hover { opacity: 0.8; }

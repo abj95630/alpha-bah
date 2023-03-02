@@ -1,52 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e435ec0fd6.js" crossorigin="anonymous"></script> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />  
     <title>Mon Portfolio A.B</title>
 </head>
-<body>
-    <header>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#parcours-experiences">Parcours</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#compétences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body id="home">
+    <nav id="navbar">
+        <img src="./images/Maquillage naturel.png" alt="" style="height: 110px;">
+        <label for="toggle" id="burger">☰</label>
+        <input type="checkbox" id="toggle">
+        <ul class="nav-list">
+            <li><a href="#home">ACCUEIL</a></li>
+            <li><a href="#presentation">À PROPOS</a></li>
+            <li><a href="#projets">PROJETS</a></li>
+            <li><a href="#compétences">COMPÉTENCES</a></li>
+            <li><a href="#form-contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-    <img src="./istockphoto-1047259374-612x612.jpeg" id="photo-code" alt="code">
-
+    <div class="photo-nom">
+        <img src="./images/photo-coloc copie.jpg" alt="photoPersonne" style="width: 120px; height: 120px; margin-top: 125px; border-radius: 50%;">
+        <div id="text"> Alpha BAH<br>Développeur en devenir</div>
+        <div style="text-align: center;">
+            <a href="#form-contact" id="bouton_contact">ME CONTACTER</a>
+        </div>
+    </div>
+    
     <div id="presentation">
-        <h2>PRESENTATION</h2>
-        <p>Je suis un développeur en devenir.</p>
+        <h1>À PROPOS</h1>
+        <p id="p-propos">Étudiant en développement informatique à l'Ada Tech School depuis octobre 2022. J'apprends
+        les conceptions globales de la programmation et leur mise en pratique dans des projets collectifs pendant 
+        2 semaines. Auparavant étudiant en reséau, je me suis respécialisé en 2020. La formation dure 21 mois avec 9 mois de formation puis 1 an d'alternance. J'apprécie
+        d'apprendre de tout sur le domaine de la tech (Front-End, Back-End, Full-Stack, Mobile). 
+        </p>
+        <div id="softs-skills">
+            <p style="font-size: 45px;">QUALITÉS</p>
+            <div id="skills">
+                <div class="nav-skills">
+                    <p>Curieux</p>
+                </div>
+                <div class="nav-skills">
+                    <p>Envie D'Apprendre</p>
+                </div>
+                <div class="nav-skills">
+                    <p>Sérieux</p>
+                </div>
+                <div class="nav-skills">
+                    <p>Collectif</p>
+                </div>
+            </div>
+        </div>
+        <a id="download_button" href="./CV Alpha BAH_alternance-developpeur-fs_.pdf" download="cv">
+            Télécharger mon CV
+        </a>
     </div>
 
-    <div id="parcours-experiences">
-        <h2>PARCOURS ET EXPERIENCES</h2>
-        <p>Voici mon parcours depuis le début de mes études supérieures</p>
-    </div>
  
-     <div id="projets">
-        <h2>PROJETS</h2>
-        <p>Pico-8</p>
-        <p>Dataviz</p>
+    <div id="projets">
+        <h1>PROJETS</h1>
+        <div class="container-projets">
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/cpbchpkw.png" class="img_projet">
+                    <p><a href="https://github.com/adatechschool/projet-collectif---pico-8-beach-team" target="_blank"  style="text-decoration: none; color: white;">🔗 Pico-8</a></p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">BeachPickWaste<br><br>
+                        Jeu de ramassage de déchets sur la plage en un temps court en Lua</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Capture d’écran 2023-01-27 à 11.52.29 AM.png" class="img_projet"/>
+                    <p><a href="https://github.com/adatechschool/projet_collectif_dataviz-meteo_dataviz" target="_blank" style="text-decoration: none; color: white;">🔗 Dataviz</a></p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">Dataviz<br><br>
+                        Site web de méteo de grandes villes françaises codé en HTML, CSS, JavaScript</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Capture d’écran 2023-01-27 à 2.25.23 PM.png" class="img_projet">
+                    <p><a href="https://github.com/adatechschool/projet_collectif_extension_navigateur-alpha-johan-hugo" target="_blank" style="text-decoration: none; color: white;"> 🔗 Extension Navigateur </a></p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">TimeTracker<br><br>
+                        Extension de compteur de temps passé sur Internet et de suggestion d'évènements du jour avec HTML, CSS et JS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/portfolio.png" class="img_projet">
+                    <p> <a href="https://github.com/abj95630/Portfolio" target="_blank" style="text-decoration: none; color: white;">🔗 Portfolio</a></p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">Portfolio<br><br>
+                        Développement de mon Portfolio en HTML, CSS et JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-projets">
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/cpgweet.png" class="img_projet">
+                    <p><a href="https://github.com/adatechschool/project_collectif_reseau_social-gweet_alpha_nolwen_lydie" target="_blank" style="text-decoration: none; color: white;">🔗 Réseau Social PHP</a></p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">Gweet<br><br>
+                        Réseau social de jeu de société développé avec HTML, CSS, PHP et MySQL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Projet.jpeg" class="img_projet">
+                    <p>🔗 Plateforme de meubles (À Venir)</p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">À Venir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Projet.jpeg" class="img_projet">
+                    <p>🔗 Microblogging (À Venir)</p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">À Venir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Projet.jpeg" class="img_projet">
+                    <p>🔗 Mobile Front (À Venir)</p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">À Venir</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-projets">
+            <div class="container-image">
+                <div class="desc-projet">
+                    <img src="/images/Projet.jpeg" class="img_projet">
+                    <p>🔗 Mobile Back (À Venir)</p>
+                </div>
+                <div class="hover">
+                    <div class="container-texte">
+                        <div class="texte-image">À Venir</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="compétences">
-        <h2>COMPÉTENCES</h2>
-        <p>HTML, CSS, JAVASCRIPT</p>
+        <h1>COMPÉTENCES</h1>
+        <div id="img_competences">
+            <div class="logo-langages">
+                <i class="fa-brands fa-html5 fa-10x"></i>
+                <p>HTML</p>
+            </div>
+            <div class="logo-langages">
+                <i class="fa-brands fa-css3-alt fa-10x"></i>
+                <p>CSS</p>
+            </div>
+            <div class="logo-langages">
+                <i class="fa-brands fa-js fa-10x"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="logo-langages">
+                <i class="fa-brands fa-python fa-10x"></i>
+                <p>Python</p>
+            </div>
+            <div class="logo-langages">
+                <i class="fa-brands fa-php fa-10x"></i>
+                <p>PHP</p>
+            </div>
+        </div>
     </div>
 
+    <div id="citation">
+        <p>Je ne perds jamais, soit je gagne, soit j'apprends - Nelson Mandela</p>
+    </div>
+
+    <div id="form-contact">
+        <h1>CONTACTEZ-MOI</h1>
+        <form action="https://formsubmit.co/abah20000@gmail.com" name="form" method="POST">
+            <label for="nom">Nom et Prénom</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+            <label for="email">Courrier Électronique</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="commentaire">Commentaire</label>
+            <textarea id="commentaire" name="commentaire" required></textarea>
+            <br>
+            <input type="hidden" name="_subject" value="Merci!">
+            <input type="hidden" name="_template" value="box">
+
+            <button type="submit" id="envoyer">Envoyer</button>
+            <p id="reponse" style="color: white;"></p>
+        </form>
+    </div>
+
+    <i onclick="topFunction()" style="color: whitesmoke" id="myBtn" class="fa-regular fa-circle-up fa-3x "></i>
+
     <footer id="contact">
-        <h2>CONTACT</h2>
-        <p>LinkedIn Github</p>
+        <p>
+            <a class="logo" href="https://www.linkedin.com/in/alpha-bah-developpeur-web-et-mobile-alternance/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0e76a8;"></i></a> 
+            <a class="logo" href="https://github.com/abj95630" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: white;"></i></a>
+        </p>
+        <p style="font-size: 15px;">@ 2023 - Alpha BAH - Tout Droits Réservés</p>
     </footer>
     <script src="script.js"></script>
 </body>

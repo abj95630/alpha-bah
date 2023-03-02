@@ -39,7 +39,6 @@
     .nav-list a {
         width: 100%;
     }
-
     #toggle:checked + .nav-list {
         display: flex;
     }

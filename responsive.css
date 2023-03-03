@@ -57,10 +57,6 @@
     #citation p {
         font-size: 1.5rem;
     }
-
-    #download_button {
-        margin-top: 5%;
-    }
 }
 
 @media screen and (max-width:1400px) {

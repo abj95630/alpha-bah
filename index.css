@@ -124,6 +124,16 @@ h1 {
     background-color: rgb(7, 6, 84);
 }
 
+#asterixprojetperso {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+#asterixprojetperso div {
+    margin-left: 2%;
+}
+
 #citation {
     display: flex;
     height: 300px;
@@ -246,6 +256,16 @@ p {
 }
 
 #img_competences i { margin: 50px; }
+
+.desc-langage {
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.logo-langages {
+    padding: 1.5rem;
+}
+
 #myBtn {
     display: none;
     position: fixed; 
@@ -254,6 +274,13 @@ p {
     border: none; 
     padding: 15px;
     z-index: 99;
+    cursor: pointer;
+    color: whitesmoke
+}
+
+#myBtn:hover {
+    color: red;
+    transition: 1s;
 }
 
 form {
@@ -267,6 +294,8 @@ form input, form button {
     width: 30rem;
     height: 2.5em;
     border-style: none;
+    cursor: pointer;
+    transition: 1s;
 }
 
 form textarea {
@@ -285,4 +314,7 @@ form button:hover {
     color: white;
 }
 
-.logo:hover { opacity: 0.8; }
+.logo:hover { 
+    opacity: 0.8;
+    transition: 1s;
+}

@@ -55,12 +55,12 @@ html {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: black;
     padding: 15px;
 }
 
 a:visited {
     text-decoration: none;
-    color: black;
 }
 
 .nav-list li:hover {

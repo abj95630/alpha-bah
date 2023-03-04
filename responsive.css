@@ -44,6 +44,12 @@
     }
 }
 
+@media screen and (max-width:765px) {
+    #download_button {
+        margin-top: 120px;
+    }
+}
+
 @media (max-width:511px) {
     #text {
         font-size: 2rem;

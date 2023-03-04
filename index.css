@@ -71,6 +71,27 @@ a:visited {
     color: red;
 }
 
+.bouton {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    overflow: hidden;
+}
+
+.deroulant .contenu-deroulant {
+    margin: 0;
+}
+
+.deroulant:hover .contenu-deroulant {
+    display: block;
+}
+
+.contenu-deroulant {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+
 /* PHOTO DE CODE */
 .photo-nom {
     width: 100%;

@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sended message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <title>Sended Message</title>
     </head>
     <body>
-        <p>Your message has sended !</p>
-        <a href="index.html/#form-contact">Return</a>
+        <style>
+            body {
+                background-color: royalblue;
+                font-family: "Abril Fatface";
+                color: white;
+            }
+
+            #return_button {
+                text-decoration: none;
+                border-radius: 15px;
+                display: inline-flex; 
+                background-color: rgb(5, 5, 85);
+                padding: 10px 25px;
+                color: white;
+            }
+
+            #return_button:hover {
+                background-color: crimson;
+                transition: .5s ease;
+            }
+        </style>
+        <h1>Your message has been sended !</h1>
+        <a id="return_button" href="./index.html#form-contact">BACK</a>
     </body>
 </html>

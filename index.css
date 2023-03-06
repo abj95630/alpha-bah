@@ -99,12 +99,11 @@ a:visited {
     position: absolute;
     overflow: hidden;
     display: none;
-    bottom: 65%;
+    bottom: 45%;
 }
 
 .contenu-deroulant a {
     display: block;
-    z-index: 1;
 }
 
 /* PHOTO DE CODE */

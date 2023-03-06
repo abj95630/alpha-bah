@@ -33,7 +33,7 @@
     nav .nav-list {
         display: none;
         flex-direction: column;
-        height: 265px;
+        height: 275px;
     }
 
     .nav-list a {
@@ -55,7 +55,6 @@
 
     .deroulant {
         top: 0;
-        left: 46%;
     }
 }
 

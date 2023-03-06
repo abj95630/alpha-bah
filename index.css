@@ -180,6 +180,7 @@ h1 {
     background-size: cover;
     color: white;
     font-weight: 700;
+    min-height: 30rem;
 }
 
 #download_button {

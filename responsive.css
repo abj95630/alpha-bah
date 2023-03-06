@@ -42,11 +42,20 @@
     #toggle:checked + .nav-list {
         display: flex;
     }
+
+    .contenu-deroulant {
+        background-color: whitesmoke;
+    }
 }
 
 @media screen and (max-width:765px) {
     #download_button {
         margin-top: 120px;
+    }
+
+    .deroulant {
+        top: 0;
+        left: 46%;
     }
 }
 
@@ -74,5 +83,47 @@
 @media screen and (max-width:1340px) {
     #img_competences {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:280px) {
+    #skills p, #download_button, .desc-projet p {
+        font-size: 20px;
+    }
+
+    .img_projet {
+        width: 230px;
+    }
+
+    
+
+    .nav-list a {
+        font-size: 13px
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    form input, form button {
+        width: 14rem;
+    }
+
+    #citation p {
+        font-size: 22px
+    }
+
+    .texte-image {
+        font-size: 15px;
+    }
+
+    .hover {
+        width: 230px;
+        left: 35px;
+        right: 40px
+    }
+
+    .contenu-deroulant {
+        top: 15px;
     }
 }

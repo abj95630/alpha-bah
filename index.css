@@ -6,7 +6,7 @@ body {
 }
 
 * { 
-    font-family: "Abril Fatface"; 
+    font-family: "Shantell Sans"; 
 }
 
 html {
@@ -180,6 +180,11 @@ h1 {
     color: white;
     font-weight: 700;
     min-height: 30rem;
+    background-size: 100% 600px;
+}
+
+#citation p {
+    text-align: center;
 }
 
 #download_button {

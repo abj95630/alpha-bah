@@ -74,12 +74,8 @@
 }
 
 @media screen and (max-width:1400px) {
-    .container-projets {
+    .container-projets, #img_competences {
        flex-flow: wrap row;
-    }
-    
-    #img_competences {
-        flex-flow: wrap row;
     }
 }
 

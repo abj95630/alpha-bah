@@ -65,9 +65,14 @@
     h1 {
         font-size: 2.5rem;
     }
-    form input, form button {
+    form input {
         width: 18rem;
     }
+
+    form button {
+        width: 100%;
+    }
+    
     #citation p {
         font-size: 1.5rem;
     }
@@ -98,8 +103,12 @@
         font-size: 32px;
     }
 
-    form input, form button {
+    form input {
         width: 14rem;
+    }
+
+    form button {
+        width: 100%;
     }
 
     #citation p {

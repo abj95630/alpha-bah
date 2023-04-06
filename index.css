@@ -242,10 +242,12 @@ h1 {
 .img_projet {
     height: 230px; 
     width: 300px;
+    border-radius: 30px;
 }
 
 .container-texte {
     background-color: blue;
+    border-radius: 30px;
 }
 
 .texte-image {
